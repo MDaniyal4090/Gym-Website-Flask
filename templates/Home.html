@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymElite | Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">GymElite</a>
+        <div class="menu">
+            <a href="Home">Home</a>
+            <a href="about">About Us</a>
+            <a href="membership">Membership</a>
+        </div>
+        <div class="cta">
+            <a href="membership">Join Now</a>
+            <a href="membership">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Life with GymElite</h1>
+            <p>Elevate your fitness journey with state-of-the-art facilities and expert trainers.</p>
+            <a href="membership" class="hero-btn">Explore Programs</a>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-section about">
+                <h2 class="footer-logo">GymElite</h2>
+                <p>
+                    Transform your fitness journey with expert trainers, state-of-the-art equipment, and a supportive community. Your path to wellness starts here!
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership">Membership</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">Join Now</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2024 GymElite | Designed with 💪 by Your Team
+        </div>
+    </footer>
+    
+</body>
+</html>

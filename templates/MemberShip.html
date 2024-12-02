@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymElite | Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">GymElite</a>
+        <div class="menu">
+            <a href="Home">Home</a>
+            <a href="about">About Us</a>
+            <a href="membership">Membership</a>
+        </div>
+        <div class="cta">
+            <a href="membership">Join Now</a>
+            <a href="membership">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="membership">
+        <div class="container">
+            <h1>Choose Your Membership Plan</h1>
+            <p>Select a plan that suits your fitness goals and lifestyle. Join the GymElite family today!</p>
+            
+            <div class="plans">
+                <!-- Basic Plan -->
+                <div class="plan">
+                    <h2>Basic</h2>
+                    <p>Perfect for beginners.</p>
+                    <ul>
+                        <li>Access to gym equipment</li>
+                        <li>Open gym hours</li>
+                        <li>Locker facility</li>
+                    </ul>
+                    <p class="price">$20/month</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+                
+                <!-- Standard Plan -->
+                <div class="plan">
+                    <h2>Standard</h2>
+                    <p>For the fitness enthusiasts.</p>
+                    <ul>
+                        <li>Includes all Basic features</li>
+                        <li>1 free personal training session</li>
+                        <li>Group fitness classes</li>
+                    </ul>
+                    <p class="price">$40/month</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="plan">
+                    <h2>Premium</h2>
+                    <p>For those serious about fitness.</p>
+                    <ul>
+                        <li>Includes all Standard features</li>
+                        <li>Unlimited personal training</li>
+                        <li>Diet consultation</li>
+                    </ul>
+                    <p class="price">$60/month</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-section about">
+                <h2 class="footer-logo">GymElite</h2>
+                <p>
+                    Transform your fitness journey with expert trainers, state-of-the-art equipment, and a supportive community. Your path to wellness starts here!
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership">Membership</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="J#">Join Now</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2024 GymElite | Designed with 💪 by Your Team
+        </div>
+    </footer>
+    
+</body>
+</html>

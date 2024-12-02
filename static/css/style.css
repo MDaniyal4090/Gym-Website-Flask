@@ -1,0 +1,392 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f1c40f;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links */
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Call-to-Action Button in Navbar */
+.navbar .cta {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .cta a {
+    font-size: 16px;
+    color: black;
+    background: #f1c40f;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar .cta a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../images/web\ banner.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.hero-btn {
+    font-size: 16px;
+    color: black;
+    background: #f1c40f;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about-section {
+    background: #f9f9f9;
+    padding: 72px 20px 0px 0px;
+    color: #333;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #f1c40f;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+    border:#f1c40f 1px solid
+}
+
+
+/* Membership Section */
+.membership {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    padding: 78px 0px 26px 0px;
+}
+
+.membership h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.membership p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.plan {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.plan p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.plan ul li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.plan .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0a500;
+    margin-bottom: 1rem;
+}
+
+.plan .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.plan .btn:hover {
+    background: #d18e04;
+}
+
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #f1c40f;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: #f1c40f;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: white;
+    color: black;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #f1c40f;
+    padding-top: 10px;
+}
+

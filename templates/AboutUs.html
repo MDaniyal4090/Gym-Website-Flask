@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymElite | Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">GymElite</a>
+        <div class="menu">
+            <a href="Home">Home</a>
+            <a href="about">About Us</a>
+            <a href="membership">Membership</a>
+        </div>
+        <div class="cta">
+            <a href="membership">Join Now</a>
+            <a href="membership">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/faculity2.jpeg') }}" alt="GymElite Facility" style="width: 60%;">
+            </div>
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>
+                    At <strong>GymElite</strong>, we believe in empowering individuals to lead healthier lives. Since our inception, we have provided state-of-the-art fitness equipment, expert trainers, and a welcoming community to support every fitness journey. Whether you're a beginner or an experienced athlete, we have programs tailored to your needs.
+                </p>
+                <p>
+                    Our mission is to make fitness accessible and enjoyable for everyone. Join us today and transform your body, mind, and spirit.
+                </p>
+                <a href="membership" class="btn-primary">Join Our Family</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+  
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-section about">
+                <h2 class="footer-logo">GymElite</h2>
+                <p>
+                    Transform your fitness journey with expert trainers, state-of-the-art equipment, and a supportive community. Your path to wellness starts here!
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership">Membership</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">Join Now</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form >
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2024 GymElite | Designed with 💪 by Your Team
+        </div>
+    </footer>
+    
+</body>
+</html>
