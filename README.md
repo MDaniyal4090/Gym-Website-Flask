@@ -1,5 +1,8 @@
 # Gym Website Flask
 
-## Features
-- Feature 1
-- Feature 2
+## Setup Instructions
+
+1. Clone the repository
+2. Install the Python flask package
+3. Run the development server by running the command `python app.py`
+
